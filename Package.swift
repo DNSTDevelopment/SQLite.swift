@@ -19,7 +19,6 @@ let package = Package(
     targets: [
         .target(
             name: "SQLite",
-            swiftSettings: [.unsafeFlags(["-enable-library-evolution","-emit-module-interface"])],
             exclude: [
                 "Info.plist"
             ]
