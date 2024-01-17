@@ -22,7 +22,7 @@ let package = Package(
             exclude: [
                 "Info.plist"
             ],
-            swiftSettings: [.unsafeFlags(["-enable-library-evolution"])]
+            swiftSettings: [.unsafeFlags(["-enable-library-evolution","-emit-module-interface"])]
         ),
         .testTarget(
             name: "SQLiteTests",
